@@ -1,4 +1,4 @@
-Country Information Script:
+**Country Information Script:**
 This script utilizes the XMLHttpRequest library to fetch information about countries from the restcountries.com API. It performs various operations on the retrieved data, including filtering countries based on region, population, and currency, as well as printing details and calculating the total population.
 
 Script Overview:
