@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid Example</title>
+</head>
+<body>
+    <!-- 6 rows -->
+    <div style="display: grid; grid-template-rows: repeat(6, 1fr); height: 100vh;">
+        <!-- First row with three columns -->
+        <h3>Name</h3>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr);">
+            <div>
+                <input type="text" name="First" id="First">
+                <br>
+                <label for="First">First</label>
+            </div>
+            <div>
+                <input type="text" name="Last" id="Last">
+                <br>
+                <label for="Last">Last</label>
+            </div>
+            <div></div>
+        </div>
+
+
+        <!-- Rows 2 to 6 -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" >
+        </div>
+
+        <div>
+            <h3>Your Experience</h3>
+            <div class="rating" id="starRating">
+                <span class="star" onclick="rateStar(1)">&#9733;</span>
+                <span class="star" onclick="rateStar(2)">&#9733;</span>
+                <span class="star" onclick="rateStar(3)">&#9733;</span>
+                <span class="star" onclick="rateStar(4)">&#9733;</span>
+                <span class="star" onclick="rateStar(5)">&#9733;</span>
+            </div>
+            <p>Overall,How would you rate us</p>
+        </div>
+        <!-- Fourth row with flex container -->
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; padding: 20px; text-align: center;">
+
+            <!-- First row with six columns -->
+            <div style="flex: 1.2;">
+                <div></div>
+            </div>
+    
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1;">
+                <div>Very Unsatisfied</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Unsatisfied</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Neutral</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Satisfied</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Very Satisfied</div>
+            </div>
+    
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap;text-align: center;">
+
+            <!-- First row with six columns -->
+            <div style="flex: 1.2;">
+                <div>Purchase</div>
+            </div>
+    
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+    
+        </div>
+        <div style="display: flex; flex-wrap: wrap;text-align: center;">
+
+            <!-- First row with six columns -->
+            <div style="flex: 1.2;">
+                <div>Service</div>
+            </div>
+    
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+    
+        </div>
+        <div style="display: flex; flex-wrap: wrap;text-align: center;">
+
+            <!-- First row with six columns -->
+            <div style="flex: 1.2;">
+                <div>Company Overall</div>
+            </div>
+    
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+    
+        </div>
+        <div style="display: flex; justify-content: space-between; border: 1px solid #ddd; padding: 20px; text-align: center;">
+            <div style="flex: 1.2;">Column 1</div>
+            <div style="flex: 1;">Column 2</div>
+            <div style="flex: 1;">Column 3</div>
+            <div style="flex: 1;">Column 4</div>
+            <div style="flex: 1;">Column 5</div>
+            <div style="flex: 1;">Column 6</div>
+        </div>
+        <div style="border: 1px solid #ddd; padding: 20px; text-align: center;">
+            <div>
+                <label for="about">About</label>
+                <textarea name="about" id="about">About me...</textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<div>Purchase</div>
+                <div>Service</div>
+                <div>Company Overall</div>
