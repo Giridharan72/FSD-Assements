@@ -3,10 +3,10 @@
 /* Global styles for the entire page */
 body {
     font-family: Arial, sans-serif;
-    margin: 100px 250px; /* Set margins */
+    margin: 10px auto; /* Set margins */
     padding: 20px; /* Set padding */
     border: 1px solid black; /* Add a border */
-    width: 900px; /* Set a fixed width for the page */
+    
 }
 
 /* Style for the main heading */
@@ -95,4 +95,11 @@ input {
     padding: 8px; /* Add padding */
     box-sizing: border-box; /* Include padding in the width */
     font-size: 16px; /* Set the font size to increase the size of the text box */
+}
+
+@media screen and (min-width: 900px) {
+    /* Apply styles when the screen width is 900 pixels or larger */
+    body {
+        width: 900px;
+    }
 }
