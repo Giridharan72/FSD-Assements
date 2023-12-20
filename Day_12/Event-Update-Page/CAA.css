@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* Global styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px auto; /* Set margins */
+    padding: 20px; /* Set padding */
+    border: 1px solid black; /* Add a border */
+    
+}
+
+/* Style for the main heading */
+h1 {
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for a subheading */
+h4 {
+    color: #555; /* Set text color */
+    text-align: center; /* Center-align the text */
+    padding: 15px; /* Add padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container for the two columns using flex display */
+.Flex {
+    display: flex; /* Use flex display */
+    padding: 10px; /* Add padding */
+    margin: 10px; /* Add margin */
+    border: 1px solid black; /* Add a border */
+}
+
+/* Additional flex container with the same styles */
+.Flexs {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Style for form elements in the second column */
+.Column2 {
+    margin: 20px 0px 0px 250px; /* Set margin for the form elements */
+    text-align: left; /* Left-align text */
+}
+
+/* Style for the first column */
+.column1 {
+    flex: 1; /* Set flex property to 1 */
+    padding: 100px; /* Add padding */
+}
+
+/* Style for input elements */
+input {
+    width: 50%; /* Set the width of the input elements */
+    padding: 8px; /* Add padding */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+/* Left-align text in a specific column */
+.column3 {
+    text-align: left;
+}
+
+/* Individual styles for each form element */
+#A {
+    margin: 10px 0 0 250px;
+}
+
+#B {
+    margin: 10px 0 0 291px;
+}
+
+#C {
+    margin: 10px 0 0 260px;
+}
+
+#D {
+    margin: 10px 0 0 208px;
+}
+
+#E {
+    margin: 10px 0 0 172px;
+}
+
+/* Adjusted styles for the submit button */
+#F {
+    margin: 20px 0px 0px 340px;
+}
+
+/* Adjusted styles for input elements */
+input {
+    width: 300px; /* Adjusted width for input elements */
+    padding: 8px; /* Add padding */
+    box-sizing: border-box; /* Include padding in the width */
+    font-size: 16px; /* Set the font size to increase the size of the text box */
+}
+
+@media screen and (min-width: 900px) {
+    /* Apply styles when the screen width is 900 pixels or larger */
+    body {
+        width: 900px;
+    }
+}

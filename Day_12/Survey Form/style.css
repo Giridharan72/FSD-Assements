@@ -1,0 +1,43 @@
+/* styles.css */
+
+body {
+    margin: auto 230px;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Apply styles to the grid container */
+div {
+    box-sizing: border-box;
+}
+
+
+
+/* Style the input and label elements */
+input {
+    width: 100%; /* Make the input element take up 100% of the width within its container */
+    box-sizing: border-box;
+    margin-bottom: 5px; /* Add some spacing between input elements */
+    padding: 8px; /* Add padding for better visual appeal */
+}
+
+label {
+    display: block; /* Display labels as block elements to start on a new line */
+    margin-bottom: 5px; /* Add some spacing between labels and input elements */
+}
+
+/* Style the comment bar textarea */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Add some spacing between textarea and other elements */
+}
+
+@media screen and (min-width: 700px) {
+    /* Apply styles when the screen width is 900 pixels or larger */
+    body {
+        width: 700px;
+    }
+}
