@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CAA.css"> <!-- Corrected the link to the CSS file -->
+    <title>Event-update-page</title>
+</head>
+<body>
+    <!-- Main heading for the page -->
+    <h1>Event 1</h1>
+    
+    <!-- Subheading indicating the number of seats available -->
+    <h4>No of seats available: 23</h4>
+    
+    <!-- Flex container for two columns -->
+    <div style="display: flex;" class="Flex">
+        <!-- First column containing an image -->
+        <div class="Flexs" id="Column1">
+            <!-- Content for the first column goes here -->
+            <img src="download.png" alt="Description of the image" class="Flex" id="Column1img" width="130px">
+        </div>
+        
+        <!-- Second column containing form elements -->
+        <div>
+            <!-- Form element for user name -->
+            <div class="Column2" id="A">
+                <label for="username">User Name:</label>
+                <input type="text" name="username" id="username" width="200px">
+            </div>
+            
+            <!-- Form element for email -->
+            <div class="Column2" id="B">
+                <label for="email" class="Column3" id="2">Email:</label>
+                <input type="email" name="email" id="email" width="60px">
+            </div>
+            
+            <!-- Form element for phone number -->
+            <div class="Column2" id="C">
+                <label for="Phone No">Phone No:</label>
+                <input type="text" name="Phone No" id="Phone No">
+            </div>
+            
+            <!-- Form element for the number of seats -->
+            <div class="Column2" id="D">
+                <label for="Number Of Seats">Number Of Seats:</label>
+                <input type="number" name="Number Of Seats" id="age" maxlength="2">
+            </div>
+            
+            <!-- Form element for the number of attendee 2 -->
+            <div class="Column2" id="E">
+                <label for="Number Of Attendee 2">Number Of Attendee 2:</label>
+                <input type="number" name="Number Of Attendee 2" id="Number Of Attendee 2" maxlength="2">
+            </div>
+            
+            <!-- Submit button -->
+            <button type="submit" class="Column4" id="F">Submit</button>
+            
+            <!-- Cancel button -->
+            <button type="submit" class="Column4" id="G">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
