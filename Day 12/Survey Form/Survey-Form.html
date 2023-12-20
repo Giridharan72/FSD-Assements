@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey-Form</title>
+</head>
+<body>
+    <!-- 6 rows -->
+    <div style="display: grid; grid-template-rows: repeat(6, 1fr); height: 100vh;">
+        <!-- First row with three columns -->
+        <h3>Name</h3>
+        <div style="display: flex;">
+            <div style="flex: 1;">
+                <input type="text" name="First" id="First">
+                <label for="First">First</label>
+            </div>
+            <div style="flex: 1;">
+                <input type="text" name="Last" id="Last">
+                <label for="Last">Last</label>
+            </div>
+            <div style="flex: 1;"></div>
+        </div>
+
+
+        <!-- Rows 2 to 6 -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" >
+        </div>
+
+        <div>
+            <h3>Your Experience</h3>
+            <div class="rating" id="starRating">
+                <span class="star" onclick="rateStar(1)">&#9733;</span>
+                <span class="star" onclick="rateStar(2)">&#9733;</span>
+                <span class="star" onclick="rateStar(3)">&#9733;</span>
+                <span class="star" onclick="rateStar(4)">&#9733;</span>
+                <span class="star" onclick="rateStar(5)">&#9733;</span>
+            </div>
+            <p>Overall,How would you rate us</p>
+        </div>
+        <!-- Fourth row with flex container -->
+        <h3>How Satisfied are you with</h3>
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; padding: 20px; text-align: center;">
+
+            <!-- First row with six columns -->
+            <div style="flex: 1.2;">
+                <div></div>
+            </div>
+        
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1;">
+                <div>Very Unsatisfied</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Unsatisfied</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Neutral</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Satisfied</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Very Satisfied</div>
+            </div>
+        
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; text-align: center;">
+        
+            <!-- First row with six columns -->
+            <div style="flex: 1.2; border: 1px solid #ddd;">
+                <div>Purchase</div>
+            </div>
+        
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+        
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; text-align: center;">
+        
+            <!-- First row with six columns -->
+            <div style="flex: 1.2; border: 1px solid #ddd;">
+                <div>Service</div>
+            </div>
+        
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+        
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; text-align: center;">
+        
+            <!-- First row with six columns -->
+            <div style="flex: 1.2; border: 1px solid #ddd;">
+                <div>Company Overall</div>
+            </div>
+        
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+        
+        </div>
+        <h3>How likely are you to</h3>
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; padding: 20px; text-align: center;">
+
+            <!-- First row with six columns -->
+            <div style="flex: 1.2;">
+                <div></div>
+            </div>
+        
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1;">
+                <div>Very Unlikely</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Unlikely</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Neutral</div>
+            </div>
+            <div style="flex: 1;">
+                <div>likely</div>
+            </div>
+            <div style="flex: 1;">
+                <div>Very likely</div>
+            </div>
+        
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; text-align: center;">
+        
+            <!-- First row with six columns -->
+            <div style="flex: 1.2; border: 1px solid #ddd;">
+                <div>Purchase</div>
+            </div>
+        
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+        
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; text-align: center;">
+        
+            <!-- First row with six columns -->
+            <div style="flex: 1.2; border: 1px solid #ddd;">
+                <div>Service</div>
+            </div>
+        
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+        
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; border: 1px solid #ddd; text-align: center;">
+        
+            <!-- First row with six columns -->
+            <div style="flex: 1.2; border: 1px solid #ddd;">
+                <div>Company Overall</div>
+            </div>
+        
+            <!-- Remaining columns with width 1 -->
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ddd;">
+                <div><div><input type="radio" name="color" value="red"></div></div>
+            </div>
+        
+        </div>
+        <h3>Additional Comment or Suggestions</h3>
+        <div style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+            <div>
+                <textarea name="about" id="about"></textarea>
+            </div>
+        </div>
+        <button type="submit" width="20px">Submit</button>
+    </div>
+    
+</body>
+</html>
+
