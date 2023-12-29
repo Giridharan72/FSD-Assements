@@ -52,7 +52,7 @@ async function displayCountryCards() {
 
         let checkWeatherLink = document.createElement('a');
         checkWeatherLink.classList.add('btn');
-        checkWeatherLink.href = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=9b3abd72af5e8ee4c215adb53b59b0e5`;
+        checkWeatherLink.href = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=489d3604df042507d354c6ddba93d320`;
         checkWeatherLink.innerText = 'Check Weather';
 
         // Add an event listener to the link to check for errors
