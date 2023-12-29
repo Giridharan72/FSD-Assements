@@ -1,0 +1,40 @@
+#countriesContainer {
+    padding: 10px;
+    background-color: rgb(29, 52, 61);
+}
+
+.card {
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to right, rgb(217, 199, 163), rgb(140, 140, 121), rgb(76, 92, 89));
+    margin-bottom: 7px;
+   
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white 1px;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    margin: auto; /* Center the button horizontally */
+    
+}
