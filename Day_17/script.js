@@ -49,10 +49,34 @@ async function displayCountryCards() {
         // Create a link to check the weather for the country
         let latitude = parseFloat(country.latlng[0]);
         let longitude = parseFloat(country.latlng[1]);
+
         let checkWeatherLink = document.createElement('a');
         checkWeatherLink.classList.add('btn');
         checkWeatherLink.href = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=9b3abd72af5e8ee4c215adb53b59b0e5`;
         checkWeatherLink.innerText = 'Check Weather';
+
+        // Add an event listener to the link to check for errors
+        checkWeatherLink.addEventListener('click', async () => {
+            try {
+                // Attempt to fetch weather data
+                let weatherResponse = await fetch(checkWeatherLink.href);
+
+                // Check if the response status is OK (200)
+                if (weatherResponse.ok) {
+                    let weatherData = await weatherResponse.json();
+                    console.log('Weather data:', weatherData);
+                    // Handle the weather data as needed
+                } else {
+                    // Log an error message if the response status is not OK
+                    console.error('Error fetching weather data:', weatherResponse.status);
+                    // You can display an error message to the user or take other actions
+                }
+            } catch (error) {
+                // Log any other errors that may occur during the fetch
+                console.error('Error fetching weather data:', error);
+                // You can display an error message to the user or take other actions
+            }
+        });
 
         // Append the created elements to the card and card body
         card.appendChild(cardTitle);
