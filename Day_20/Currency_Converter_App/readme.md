@@ -1,5 +1,5 @@
-Currency Converter Web App
-Overview
+Currency Converter Web App-
+Overview:
 The Currency Converter web app allows users to convert currencies and get real-time exchange rates. Users can select the source and target currencies, enter the amount, and the app fetches the latest exchange rates from the ExchangeRate API to display the converted amount.
 
 Features
