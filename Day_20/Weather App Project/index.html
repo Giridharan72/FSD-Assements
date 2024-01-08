@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather App Project JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Weather Dashboard</h1>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="weather-input bg-light p-4 rounded">
+                    <h3 class="mb-4">Enter a City Name</h3>
+                    <div class="input-group mb-3">
+                        <input class="form-control city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary search-btn" type="button">Search</button>
+                        </div>
+                    </div>
+                    <div class="separator my-4"></div>
+                    <button class="btn btn-secondary location-btn">Use Current Location</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6 mx-auto">
+                <div class="weather-data bg-light p-4 rounded">
+                    <div class="current-weather">
+                        <div class="details">
+                            <h2>_______ ( ______ )</h2>
+                            <h6>Temperature: __°C</h6>
+                            <h6>Wind: __ M/S</h6>
+                            <h6>Humidity: __%</h6>
+                        </div>
+                    </div>
+                    <div class="days-forecast mt-4">
+                        <h2>5-Day Forecast</h2>
+                        <ul class="list-group weather-cards">
+                            <li class="list-group-item card">
+                                <h3>( ______ )</h3>
+                                <h6>Temp: __C</h6>
+                                <h6>Wind: __ M/S</h6>
+                                <h6>Humidity: __%</h6>
+                            </li>
+                            <li class="list-group-item card">
+                              <h3>( ______ )</h3>
+                              <h6>Temp: __C</h6>
+                              <h6>Wind: __ M/S</h6>
+                              <h6>Humidity: __%</h6>
+                          </li>
+                          <li class="list-group-item card">
+                            <h3>( ______ )</h3>
+                            <h6>Temp: __C</h6>
+                            <h6>Wind: __ M/S</h6>
+                            <h6>Humidity: __%</h6>
+                        </li>
+                        <li class="list-group-item card">
+                          <h3>( ______ )</h3>
+                          <h6>Temp: __C</h6>
+                          <h6>Wind: __ M/S</h6>
+                          <h6>Humidity: __%</h6>
+                      </li>
+                      <li class="list-group-item card">
+                        <h3>( ______ )</h3>
+                        <h6>Temp: __C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                    </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
