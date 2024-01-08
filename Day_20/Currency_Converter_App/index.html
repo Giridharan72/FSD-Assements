@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Currency Converter</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <header class="mt-5 mb-4 text-center"><h1>Currency Converter</h1></header>
+        <form action="#">
+            <div class="form-group amount">
+                <label for="amount">Enter Amount</label>
+                <input type="text" class="form-control" id="amount" value="1">
+            </div>
+            <div class="form-row drop-list">
+                <div class="form-group col-md-4 from">
+                    <label for="fromCurrency">From</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <img src="https://flagcdn.com/48x36/us.png" alt="flag" class="input-group-text">
+                        </div>
+                        <select class="custom-select" id="fromCurrency"></select>
+                    </div>
+                </div>
+                <div class="icon col-md-4 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div class="form-group col-md-4 to">
+                    <label for="toCurrency">To</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <img src="https://flagcdn.com/48x36/in.png" alt="flag" class="input-group-text">
+                        </div>
+                        <select class="custom-select" id="toCurrency"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange-rate">Getting exchange rate...</div>
+            <button type="button" class="btn btn-primary">Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <!-- Link to Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include your JS files -->
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

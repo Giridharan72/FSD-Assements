@@ -1,0 +1,79 @@
+/* Custom CSS for Weather App */
+
+body {
+  background: lightslategray;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.weather-input {
+  width: 100%;
+}
+
+.weather-input h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.weather-input input {
+  height: 46px;
+}
+
+.weather-input .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #e2e2e2;
+}
+
+.weather-data {
+  width: 100%;
+}
+
+.current-weather {
+  background: #007bff;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.weather-cards .card {
+  color: #ffffff;
+  padding: 18px 16px;
+  border-radius: 5px;
+  background: #6c757d;
+  margin-bottom: 10px;
+}
+
+.weather-cards .card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.location-btn {
+  margin-top: 20px;
+}
+
+/* Override Bootstrap's default margin for the body */
+body {
+  margin: 0;
+}
+
+/* Override Bootstrap's default padding for the container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Override Bootstrap's default border radius for rounded elements */
+.rounded {
+  border-radius: 8px;
+}
