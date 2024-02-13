@@ -1,53 +1,71 @@
+--  a new database named 'guvi'
 CREATE DATABASE guvi;
 
+--  a table to store profile information
 CREATE TABLE profile (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255),
-    phone VARCHAR(20),
-    email VARCHAR(255),
-    batch VARCHAR(50),
-    qualification VARCHAR(100),
-    year_of_passing INT
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique identifier for each profile
+    name VARCHAR(255),  -- Name of the person
+    phone VARCHAR(20),  -- Phone number
+    email VARCHAR(255),  -- Email address
+    batch VARCHAR(50),  -- Batch or group the person belongs to
+    qualification VARCHAR(100),  -- Educational qualification
+    year_of_passing INT  -- Year of passing
 );
 
+-- a table to store activities data
 CREATE TABLE activities (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    session_roadmap VARCHAR(255),
-    activities VARCHAR(255),
-    task VARCHAR(255),
-    profile_id INT,
-    FOREIGN KEY (profile_id) REFERENCES profile(id)
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique identifier for each activity
+    session_roadmap VARCHAR(255),  -- Session or roadmap of the activity
+    activities VARCHAR(255),  -- Description of the activities
+    task VARCHAR(255),  -- Task related to the activity
+    profile_id INT,  -- Foreign key referencing the profile table
+    FOREIGN KEY (profile_id) REFERENCES profile(id)  -- Constraint to ensure data integrity
 );
 
+-- a table to store dashboard data
 CREATE TABLE dashboard (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    codekata INT,
-    webkata INT,
-    task INT,
-    profile_id INT,
-    FOREIGN KEY (profile_id) REFERENCES profile(id)
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique identifier for each dashboard entry
+    codekata INT,  -- Number of codekata completed
+    webkata INT,  -- Number of webkata completed
+    task INT,  -- Number of tasks completed
+    profile_id INT,  -- Foreign key referencing the profile table
+    FOREIGN KEY (profile_id) REFERENCES profile(id)  -- Constraint to ensure data integrity
 );
 
+-- a table to store task descriptions
 CREATE TABLE task (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    task_description VARCHAR(255)
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique identifier for each task
+    task_description VARCHAR(255)  -- Description of the task
 );
 
+-- a table to store leaderboard data
 CREATE TABLE leaderboard (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255),
-    ranks INT,
-    batch VARCHAR(50),
-    learning VARCHAR(255),
-    profile_id INT,
-    FOREIGN KEY (profile_id) REFERENCES profile(id)
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique identifier for each leaderboard entry
+    name VARCHAR(255),  -- Name of the person
+    ranks INT,  -- Rank achieved
+    batch VARCHAR(50),  -- Batch or group the person belongs to
+    learning VARCHAR(255),  -- Learning area
+    profile_id INT,  -- Foreign key referencing the profile table
+    FOREIGN KEY (profile_id) REFERENCES profile(id)  -- Constraint to ensure data integrity
 );
 
+--a table to store queries made by users
 CREATE TABLE queries (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    query VARCHAR(255),
-    profile_id INT,
-    FOREIGN KEY (profile_id) REFERENCES profile(id)
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique identifier for each query
+    query VARCHAR(255),  -- Text of the query
+    profile_id INT,  -- Foreign key referencing the profile table
+    FOREIGN KEY (profile_id) REFERENCES profile(id)  -- Constraint to ensure data integrity
+);
+
+--a table to store leave application data
+CREATE TABLE leave_application (
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique identifier for each leave application
+    profile_id INT,  -- Foreign key referencing the profile table
+    start_date DATE,  -- Start date of leave
+    end_date DATE,  -- End date of leave
+    reason VARCHAR(255),  -- Reason for leave
+    status VARCHAR(50),  -- Status of the leave application
+    FOREIGN KEY (profile_id) REFERENCES profile(id)  -- Constraint to ensure data integrity
 );
 -- Sample data for the profile table
 INSERT INTO profile (name, phone, email, batch, qualification, year_of_passing)
@@ -169,6 +187,12 @@ VALUES
     ('How to file a legal case?', 14),
     ('What are the different painting techniques?', 15);
 
+INSERT INTO leave_application (profile_id, start_date, end_date, reason, status)
+VALUES
+    (1, '2024-02-01', '2024-02-05', 'Vacation', 'Approved'),
+    (2, '2024-02-10', '2024-02-12', 'Family emergency', 'Pending'),
+    (3, '2024-02-15', '2024-02-17', 'Medical leave', 'Approved');
+
 SELECT p.name, a.session_roadmap, a.activities, a.task
 FROM profile p
 JOIN activities a ON p.id = a.profile_id;
@@ -186,4 +210,6 @@ SELECT session_roadmap, COUNT(*) AS total_activities
 FROM activities
 GROUP BY session_roadmap;
 
-
+SELECT l.*, p.name AS applicant_name
+FROM leave_application l
+JOIN profile p ON l.profile_id = p.id;
