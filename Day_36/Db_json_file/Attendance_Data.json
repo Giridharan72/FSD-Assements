@@ -1,0 +1,62 @@
+ [
+    {
+      "date": "2024-02-01",
+      "status": "Present",
+      "profile_id": 1,
+      "task_id": 1
+    },
+    {
+      "date": "2024-02-01",
+      "status": "Absent",
+      "profile_id": 2,
+      "task_id": 2
+    },
+    {
+      "date": "2024-02-02",
+      "status": "Present",
+      "profile_id": 1,
+      "task_id": 3
+    },
+    {
+      "date": "2024-02-02",
+      "status": "Present",
+      "profile_id": 3,
+      "task_id": null
+    },
+    {
+      "date": "2024-02-03",
+      "status": "Absent",
+      "profile_id": 2,
+      "task_id": null
+    },
+    {
+      "date": "2024-02-03",
+      "status": "Present",
+      "profile_id": 3,
+      "task_id": 4
+    },
+    {
+      "date": "2024-02-04",
+      "status": "Present",
+      "profile_id": 1,
+      "task_id": 5
+    },
+    {
+      "date": "2024-02-04",
+      "status": "Absent",
+      "profile_id": 2,
+      "task_id": null
+    },
+    {
+      "date": "2024-02-05",
+      "status": "Present",
+      "profile_id": 1,
+      "task_id": 6
+    },
+    {
+      "date": "2024-02-05",
+      "status": "Absent",
+      "profile_id": 3,
+      "task_id": null
+    }
+  ],

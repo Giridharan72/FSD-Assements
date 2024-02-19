@@ -1,0 +1,62 @@
+[
+  {
+    "name": "User 1",
+    "description": "Introduction to programming challenges",
+    "difficulty": "Beginner",
+    " problems_solved":10
+  },
+  {
+    "name": "User 2",
+    "description": "Intermediate programming challenges",
+    "difficulty": "Intermediate",
+    " problems_solved":12
+  },
+  {
+    "name": "User 3",
+    "description": "Advanced programming challenges",
+    "difficulty": "Advanced",
+    " problems_solved":15
+  },
+  {
+    "name": "User 4",
+    "description": "Algorithmic problem-solving",
+    "difficulty": "Advanced",
+    " problems_solved":17
+  },
+  {
+    "name": "User 15",
+    "description": "Dynamic programming challenges",
+    "difficulty": "Intermediate",
+    " problems_solved":19
+  },
+  {
+    "name": "User 5",
+    "description": "Graph algorithms challenges",
+    "difficulty": "Advanced",
+    " problems_solved":21
+  },
+  {
+    "name": "User 7",
+    "description": "String manipulation problems",
+    "difficulty": "Intermediate",
+    " problems_solved":43
+  },
+  {
+    "name": "User 8",
+    "description": "Data structure implementation challenges",
+    "difficulty": "Intermediate",
+    " problems_solved":13
+  },
+  {
+    "name": "User 9",
+    "description": "Search algorithm challenges",
+    "difficulty": "Advanced",
+    " problems_solved":10
+  },
+  {
+    "name": "User 10",
+    "description": "Tree algorithm challenges",
+    "difficulty": "Advanced",
+    " problems_solved":15
+  }
+]

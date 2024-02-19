@@ -1,0 +1,47 @@
+[
+    {
+      "description": "Complete Assignment 1",
+      "deadline": "2024-03-15",
+      "profile_id": 1
+    },
+    {
+      "description": "Read Chapter 3",
+      "deadline": "2024-03-10",
+      "profile_id": 2
+    },
+    {
+      "description": "Prepare for Presentation",
+      "deadline": "2024-03-20",
+      "profile_id": 3
+    },
+    {
+      "description": "Research Topic for Project",
+      "deadline": "2024-03-05",
+      "profile_id": 4
+    },
+    {
+      "description": "Write Project Proposal",
+      "deadline": "2024-03-12",
+      "profile_id": 5
+    },
+    {
+      "description": "Conduct Experiments",
+      "deadline": "2024-03-18",
+      "profile_id": 6
+    },
+    {
+      "description": "Write Research Paper",
+      "deadline": "2024-03-25",
+      "profile_id": 7
+    },
+    {
+      "description": "Prepare Poster Presentation",
+      "deadline": "2024-03-30",
+      "profile_id": 8
+    },
+    {
+      "description": "Revise for Exams",
+      "deadline": "2024-04-05",
+      "profile_id": 8
+    }
+  ]

@@ -1,0 +1,62 @@
+[
+    {
+      "name": "Data Structures",
+      "description": "Fundamental data structures and algorithms",
+      "date": "2024-02-15",
+      "profile_id": 1
+    },
+    {
+      "name": "Web Development",
+      "description": "Building dynamic web applications",
+      "date": "2024-02-15",
+      "profile_id": 2
+    },
+    {
+      "name": "Machine Learning",
+      "description": "Understanding machine learning concepts",
+      "date": "2024-02-15",
+      "profile_id": 3
+    },
+    {
+      "name": "Database Systems",
+      "description": "Designing and managing databases",
+      "date": "2024-02-15",
+      "profile_id": 4
+    },
+    {
+      "name": "Software Engineering",
+      "description": "Principles and practices of software development",
+      "date": "2024-02-15",
+      "profile_id": 5
+    },
+    {
+      "name": "Operating Systems",
+      "description": "Understanding how operating systems work",
+      "date": "2024-02-15",
+      "profile_id": 6
+    },
+    {
+      "name": "Network Security",
+      "description": "Securing computer networks and systems",
+      "date": "2024-02-15",
+      "profile_id": 7
+    },
+    {
+      "name": "Cloud Computing",
+      "description": "Utilizing cloud services for scalable applications",
+      "date": "2024-02-15",
+      "profile_id": 8,
+    },
+    {
+      "name": "Artificial Intelligence",
+      "description": "Exploring AI algorithms and applications",
+      "date": "2024-02-15",
+      "profile_id": 9
+    },
+    {
+      "name": "Mobile App Development",
+      "description": "Building applications for mobile devices",
+      "date": "2024-02-15",
+      "profile_id": 10
+    }
+  ]

@@ -1,0 +1,52 @@
+[
+    {
+      "company_name": "XYZ Corp",
+      "date": "2024-03-15",
+      "location": "City A"
+    },
+    {
+      "company_name": "ABC Inc",
+      "date": "2024-03-20",
+      "location": "City B"
+    },
+    {
+      "company_name": "DEF Enterprises",
+      "date": "2024-03-25",
+      "location": "City C"
+    },
+    {
+      "company_name": "GHI Tech",
+      "date": "2024-03-30",
+      "location": "City D"
+    },
+    {
+      "company_name": "JKL Solutions",
+      "date": "2024-04-05",
+      "location": "City E"
+    },
+    {
+      "company_name": "MNO Innovations",
+      "date": "2024-04-10",
+      "location": "City F"
+    },
+    {
+      "company_name": "PQR Services",
+      "date": "2024-04-15",
+      "location": "City G"
+    },
+    {
+      "company_name": "STU Labs",
+      "date": "2024-04-20",
+      "location": "City H"
+    },
+    {
+      "company_name": "VWX Solutions",
+      "date": "2024-04-25",
+      "location": "City I"
+    },
+    {
+      "company_name": "YZA Tech",
+      "date": "2024-04-30",
+      "location": "City J"
+    }
+  ]
